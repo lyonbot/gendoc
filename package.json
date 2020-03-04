@@ -1,0 +1,37 @@
+{
+  "name": "ts-gendoc",
+  "version": "0.1.0",
+  "description": "get info from TypeScript type declaration and generate document",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc -m es6 && rollup -c",
+    "test": "nyc mocha"
+  },
+  "keywords": [
+    "document",
+    "generate",
+    "interface",
+    "type",
+    "typing",
+    "ast",
+    "typescript",
+    "api"
+  ],
+  "author": "lyonbot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lyonbot/gendoc.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "mocha": "^7.1.0",
+    "nyc": "^15.0.0",
+    "rollup": "^1.32.0",
+    "ts-node": "^8.6.2"
+  }
+}
